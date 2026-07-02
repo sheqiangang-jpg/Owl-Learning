@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>研修管理システム</title>
+  <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" class="logo">
+  <h1>OWL LEARNING</h1>
+  <h2>こんにちは城月さん</h2>
+</header>
+
+<div class="wrap">
+
+  <aside>
+	  
+<details class="menu">
+  <summary>マイページ</summary>
+  <ul>
+    <li class="text-red2">登録情報確認</li>
+    <li class="text-red2">パスワード設定</li>
+  </ul>
+</details>
+
+<details class="menu">
+  <summary>講座管理</summary>
+  <ul>
+    <li class="text-red2">講座一覧</li>
+    <li class="text-red2">申請</li>
+    <li class="text-red2">予約管理</li>
+    <li class="text-red2">課題管理</li>
+    <li class="text-red2">アンケート提出</li>
+    <li class="text-red2">受講履歴</li>
+  </ul>
+</details>
+
+<ul class="bottom">
+      <li class="text-red2">・お知らせ一覧 </li>
+      <li class="text-red2">・お問い合わせ</li>
+      <li class="text-red2">・ログアウト</li>
+</ul>
+
+  </aside>
+
+  <main>
+
+    <div class="notice">
+
+      <div class="title">お知らせ</div>
+
+      <div class="item">
+        <input type="checkbox" class="box"></input>
+        <span class="text-red" >未提出の課題があります。</span>
+      </div>
+
+      <div class="item">
+        <input type="checkbox" class="box"></input>
+        <span class="text-red">7月8日(月) ○○講座</span>
+      </div>
+
+    </div>
+
+    <img src="calendar.png" class="calendar">
+
+  </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+body{
+  background:#f2f2f2;
+}
+
+/* ヘッダー */
+
+header{
+  height:90px;
+  background:linear-gradient(#5c91ef,#4d84e8);
+  display:flex;
+  align-items:center;
+  padding:0 28px;
+  color:#fff;
+}
+
+.logo {
+  width: 90px;              /*sample 正方形に近づけるためにサイズを調整 */
+  height: 90px;             /* 縦横を揃えると綺麗なダイヤ型になります */
+  object-fit: contain;
+  background: #fff;
+  margin-right: 12px;
+  
+  border-radius: 50%;
+/*  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);ダイヤはいまいち*/
+}
+
+h1{
+  font-size:22px;
+  font-weight:normal;
+}
+
+h2 {
+  margin-left: auto;
+  font-size: 14px; /* お好みの文字サイズに調整してください */
+}
+
+/* レイアウチュ */
+
+.wrap{
+  display:flex;
+}
+
+/* サイドバー */
+
+aside{
+  width:300px;
+  min-height:100vh;
+  background:#ececec;
+  padding:25px 35px;
+}
+
+.menu{
+  margin-bottom:18px;
+}
+
+.menu p{
+  margin-bottom:10px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.menu li,
+.bottom li{
+  list-style:none;
+  margin:16px 0 16px 24px;
+  font-size:15px;
+}
+
+.bottom{
+  margin-top:20px;
+  position: relative; /* sample基準値とする */
+
+}
+
+.bottom::after {
+  content: "2";        /* 表示する記号や文字を入れる（1文字） */
+  position: absolute;   /* 相対位置を指定 */
+  top: -10px;           /* 表示位置を上から-10pxの位置にする */
+  right: -10px;         /* 表示位置を右から-10pxの位置にする */
+  color: #FFF;          /* 文字色を白色に指定 */
+  line-height: 20px;    /* 行の高さを指定 */
+  font-weight: bold;    /* 太文字にする */
+  text-align: center;   /* 文字を中央揃えにする */
+  width: 20px;          /* 幅を20pxに指定 */
+  background: #F00;     /* 背景色を赤に指定 */
+  border-radius: 50%;   /* 角丸を50%に指定 */
+}
+
+.dot{
+  width:16px;
+  height:16px;
+  background:red;
+  border-radius:50%;
+  display:inline-block;
+  margin-left:35px;
+}
+
+/* メイン */
+
+main{
+  flex-grow: 1;             /* 追加：サイドバーの右側の残りスペースをすべてmainが埋める */
+  padding: 50px 50px 0 50px; /* 修正：上下左右の余白を調整。左右を50pxで同じ空白にします */
+  
+}
+
+/* お知らせ */
+
+.notice{
+  width:840px;
+  border:2px solid #444;
+  background:#fff;
+}
+
+.title{
+  background:#4c84e8;
+  color:#fff;
+  padding:10px;
+  font-size:14px;
+}
+
+.item{
+  height:48px;
+  border-top:1px solid #ddd;
+  display:flex;
+  align-items:center;
+  padding:0 14px;
+}
+
+.box{
+  width:32px;
+  height:32px;
+  border:2px solid #666;
+  margin-right:10px;
+}
+
+
+.text-red{
+	text-decoration: underline; /*sample 下線 */
+  	text-decoration-color: black; /* 線の色 */
+ 	text-decoration-thickness: 1px; /* 線の太さ */
+}
+
+.text-red:hover {
+  color: red;
+}
+.text-red2:hover {
+  color: red;
+}
+
+.badge {
+  position: absolute;
+  top: -5px; /* sampleアイコン上に配置 */
+  right: -5px;
+  background-color: #ff4757; /* 赤色 */
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%; /* 丸形 */
+  padding: 2px 5px; /* サイズ調整 */
+}
+
+.calendar{
+  width:840px;
+  margin-top:45px;
+}
