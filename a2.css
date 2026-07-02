@@ -1,12 +1,45 @@
-<details class="menu">
-  <summary>講座管理</summary>
-  <ul>
-    <li class="text-red2">講座一覧</li>
-    <li class="text-red2">申請</li>
-    <li class="text-red2">予約管理</li>
-    <li class="text-red2">課題管理</li>
-    <li class="text-red2">アンケート提出</li>
-    <li class="text-red2">受講履歴</li>
-    
-  </ul>
-</details>
+@charset "UTF-8";
+/* メニュー全体の基本設定 */
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* メニューのトリガー（タイトル） */
+.menu-title {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* プルダウンリストの初期設定（非表示） */
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ホバー時にプルダウンを表示 */
+.dropdown-menu:hover .dropdown-list {
+  display: block;
+}
+
+/* リストアイテム内のリンク設定 */
+.dropdown-list li a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* リストアイテムのホバー効果 */
+.dropdown-list li a:hover {
+  background-color: #e6e6e6;
+}

@@ -1,74 +1,171 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>研修管理システム</title>
-  <link rel="stylesheet" href="index2.css">
-</head>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
 
-<body>
+body{
+  background:#f2f2f2;
+}
 
-<header>
-  <img src="logo.png" class="logo">
-  <h1>OWL LEARNING</h1>
-  <h2>こんにちは城月さん</h2>
-</header>
+/* ヘッダー */
 
-<div class="wrap">
+header{
+  height:90px;
+  background:linear-gradient(#5c91ef,#4d84e8);
+  display:flex;
+  align-items:center;
+  padding:0 28px;
+  color:#fff;
+}
 
-  <aside>
-	  
-<details class="menu">
-  <summary>マイページ</summary>
-  <ul>
-    <li class="text-red2">登録情報確認</li>
-    <li class="text-red2">パスワード設定</li>
-  </ul>
-</details>
+.logo {
+  width: 90px;              /*sample 正方形に近づけるためにサイズを調整 */
+  height: 90px;             /* 縦横を揃えると綺麗なダイヤ型になります */
+  object-fit: contain;
+  background: #fff;
+  margin-right: 12px;
+  
+  border-radius: 50%;
+/*  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);ダイヤはいまいち*/
+}
 
-<details class="menu">
-  <summary>講座管理</summary>
-  <ul>
-    <li class="text-red2">講座一覧</li>
-    <li class="text-red2">申請</li>
-    <li class="text-red2">予約管理</li>
-    <li class="text-red2">課題管理</li>
-    <li class="text-red2">アンケート提出</li>
-    <li class="text-red2">受講履歴</li>
-  </ul>
-</details>
+h1{
+  font-size:22px;
+  font-weight:normal;
+}
 
-<ul class="bottom">
-      <li class="text-red2">・お知らせ一覧 </li>
-      <li class="text-red2">・お問い合わせ</li>
-      <li class="text-red2">・ログアウト</li>
-</ul>
+h2 {
+  margin-left: auto;
+  font-size: 14px; /* お好みの文字サイズに調整してください */
+}
 
-  </aside>
+/* レイアウチュ */
 
-  <main>
+.wrap{
+  display:flex;
+}
 
-    <div class="notice">
+/* サイドバー */
 
-      <div class="title">お知らせ</div>
+aside{
+  width:300px;
+  min-height:100vh;
+  background:#ececec;
+  padding:25px 35px;
+}
 
-      <div class="item">
-        <input type="checkbox" class="box"></input>
-        <span class="text-red" >未提出の課題があります。</span>
-      </div>
+.menu{
+  margin-bottom:18px;
+}
 
-      <div class="item">
-        <input type="checkbox" class="box"></input>
-        <span class="text-red">7月8日(月) ○○講座</span>
-      </div>
+.menu p{
+  margin-bottom:10px;
+  display:flex;
+  justify-content:space-between;
+}
 
-    </div>
+.menu li,
+.bottom li{
+  list-style:none;
+  margin:16px 0 16px 24px;
+  font-size:15px;
+}
 
-    <img src="calendar.png" class="calendar">
+.bottom{
+  margin-top:20px;
+  position: relative; /* sample基準値とする */
 
-  </main>
+}
 
-</div>
+.bottom::after {
+  content: "2";        /* 表示する記号や文字を入れる（1文字） */
+  position: absolute;   /* 相対位置を指定 */
+  top: -10px;           /* 表示位置を上から-10pxの位置にする */
+  right: -10px;         /* 表示位置を右から-10pxの位置にする */
+  color: #FFF;          /* 文字色を白色に指定 */
+  line-height: 20px;    /* 行の高さを指定 */
+  font-weight: bold;    /* 太文字にする */
+  text-align: center;   /* 文字を中央揃えにする */
+  width: 20px;          /* 幅を20pxに指定 */
+  background: #F00;     /* 背景色を赤に指定 */
+  border-radius: 50%;   /* 角丸を50%に指定 */
+}
 
-</body>
-</html>
+.dot{
+  width:16px;
+  height:16px;
+  background:red;
+  border-radius:50%;
+  display:inline-block;
+  margin-left:35px;
+}
+
+/* メイン */
+
+main{
+  flex-grow: 1;             /* 追加：サイドバーの右側の残りスペースをすべてmainが埋める */
+  padding: 50px 50px 0 50px; /* 修正：上下左右の余白を調整。左右を50pxで同じ空白にします */
+  
+}
+
+/* お知らせ */
+
+.notice{
+  width:840px;
+  border:2px solid #444;
+  background:#fff;
+}
+
+.title{
+  background:#4c84e8;
+  color:#fff;
+  padding:10px;
+  font-size:14px;
+}
+
+.item{
+  height:48px;
+  border-top:1px solid #ddd;
+  display:flex;
+  align-items:center;
+  padding:0 14px;
+}
+
+.box{
+  width:32px;
+  height:32px;
+  border:2px solid #666;
+  margin-right:10px;
+}
+
+
+.text-red{
+	text-decoration: underline; /*sample 下線 */
+  	text-decoration-color: black; /* 線の色 */
+ 	text-decoration-thickness: 1px; /* 線の太さ */
+}
+
+.text-red:hover {
+  color: red;
+}
+.text-red2:hover {
+  color: red;
+}
+
+.badge {
+  position: absolute;
+  top: -5px; /* sampleアイコン上に配置 */
+  right: -5px;
+  background-color: #ff4757; /* 赤色 */
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%; /* 丸形 */
+  padding: 2px 5px; /* サイズ調整 */
+}
+
+.calendar{
+  width:840px;
+  margin-top:45px;
+}
