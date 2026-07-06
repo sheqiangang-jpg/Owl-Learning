@@ -1,100 +1,97 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>研修詳細画面</title>
+@charset "UTF-8";
 
-  <!-- index2.css は変更せず、そのまま使用 -->
-  <link rel="stylesheet" href="../css/3.syain/index2.css">
+/* メインを中央寄せ */
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
 
-  <!-- この画面専用CSSだけ変更 -->
-  <link rel="stylesheet" href="../css/2.kanrisya/class_view_detail.css">
-</head>
+/* 中央の箱 */
+.submission-container {
+  width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
 
-<body>
-  <header>
-    <img src="img/logo.png" class="logo" alt="ロゴ">
-    <h1>Owl Learning</h1>
-    <h2>城月さんのページです</h2>
-  </header>
+/* タイトル */
+.page-title {
+  margin-bottom: 25px;
+  color: #333;
+}
 
-  <div class="wrap">
-    <aside>
-      <details class="menu">
-        <summary>マイページ</summary>
-        <ul>
-          <li class="text-red2">登録情報確認</li>
-          <li class="text-red2">パスワード設定</li>
-        </ul>
-      </details>
+/* ファイルドロップエリア */
+.file-drop-area {
+  position: relative;
+  height: 250px;
+  border: 3px dashed #4d84e8;
+  border-radius: 10px;
+  background: #f7fbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-      <details class="menu">
-        <summary>メンバー</summary>
-        <ul>
-          <li class="text-red2">メンバー登録</li>
-          <li class="text-red2">メンバー閲覧</li>
-        </ul>
-      </details>
+/* フォルダー画像 */
+.logo2 {
+  width: 90px;
+  margin-bottom: 15px;
+}
 
-      <details class="menu">
-        <summary>研修</summary>
-        <ul>
-          <li class="text-red2">研修登録</li>
-          <li class="text-red2">研修閲覧</li>
-        </ul>
-      </details>
+/* ファイル選択ボタン */
+.choose-file-button {
+  background: #4d84e8;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
 
-      <ul class="bottom">
-        <li class="text-red2">・お知らせ一覧</li>
-        <li class="text-red2">・よくある質問</li>
-        <li class="text-red2">・ログアウト</li>
-        <li class="text-red2">・社員切り替え</li>
-      </ul>
-    </aside>
+/* 説明文 */
+.file-message {
+  color: #555;
+}
 
-    <main>
-      <section class="detail-card">
-        <p class="page-label">研修詳細</p>
-        <h1 class="article-title">新人研修</h1>
+/* inputを透明にして全体クリック可能にする */
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
 
-        <table class="design08">
-          <tr>
-            <th>研修名</th>
-            <td>新人研修</td>
-          </tr>
-          <tr>
-            <th>開講日時</th>
-            <td>2026/04/15　12:00</td>
-          </tr>
-          <tr>
-            <th>対象年次</th>
-            <td>1年次</td>
-          </tr>
-          <tr>
-            <th>開催場所</th>
-            <td>対面（馬車道）</td>
-          </tr>
-          <tr>
-            <th>講義概要</th>
-            <td>入社1年以内の社員が受けるべき研修です。これを受けないと配属されません。</td>
-          </tr>
-        </table>
+/* ファイル一覧 */
+.file-list {
+  margin-top: 25px;
+}
 
-        <div class="button-area">
-          <div class="button020">
-            <a href="#">事前資料をダウンロード</a>
-          </div>
+/* ファイル1件分 */
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
 
-          <div class="button020">
-            <a href="#">事前課題をダウンロード</a>
-          </div>
+/* ボタン */
+.edit-button,
+.delete-button {
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-          <div class="button020">
-            <a href="#">報告書をダウンロード</a>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-</body>
-</html>
+/* 編集ボタン */
+.edit-button {
+  background: #4d84e8;
+}
+
+/* 削除ボタン */
+.delete-button {
+  background: #e74c3c;
+}
