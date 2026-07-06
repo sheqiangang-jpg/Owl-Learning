@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* 詳細画面全体 */
+.detail-card {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* 小さい見出し */
+.page-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 5px 12px;
+  background: #edf6ff;
+  color: #4d84e8;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* タイトル */
+.article-title {
+  margin-bottom: 25px;
+  padding-left: 14px;
+  border-left: 6px solid #4d84e8;
+  color: #26384d;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+/* テーブル */
+.design08 {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+}
+
+/* 左側の項目名 */
+.design08 th {
+  width: 180px;
+  padding: 16px;
+  background: #e9f3ff;
+  border: 1px solid #cfd8e3;
+  color: #26384d;
+  text-align: left;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+/* 右側の内容 */
+.design08 td {
+  padding: 16px;
+  border: 1px solid #cfd8e3;
+  color: #333;
+  line-height: 1.7;
+  vertical-align: top;
+}
+
+/* ボタンエリア */
+.button-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+/* ボタン */
+.button020 a {
+  min-width: 230px;
+  background: #f0f4fa;
+  border: 1px solid #d8e0ea;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 42px 13px 18px;
+  color: #26384d;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  font-weight: 700;
+}
+
+/* ボタン hover */
+.button020 a:hover {
+  background: #4d84e8;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 矢印の横線 */
+.button020 a::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transform: translateY(-50%);
+}
+
+/* 矢印の先 */
+.button020 a::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* 画面が狭いとき */
+@media (max-width: 800px) {
+  .detail-card {
+    padding: 24px 16px;
+  }
+
+  .article-title {
+    font-size: 28px;
+  }
+
+  .design08 th,
+  .design08 td {
+    display: block;
+    width: 100%;
+  }
+
+  .design08 th {
+    border-bottom: none;
+  }
+
+  .button-area {
+    display: block;
+  }
+
+  .button020 {
+    margin-bottom: 14px;
+  }
+
+  .button020 a {
+    width: 100%;
+  }
+}
