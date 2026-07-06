@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.article-title {
+	font-size: 50px;
+	font-weight: 800;
+}
+.design08 {
+width: 1000px;
+ text-align: center;
+ border-collapse: collapse;
+ border-spacing: 0;
+ display: flex;
+ justify-content: center;
+}
+.design08 th {
+ padding: 10px;
+ background: #778ca3;
+ border: solid 1px #666666;
+ color: #ffffff;
+}
+.design08 td {
+ padding: 10px;
+ border: solid 1px #666666;
+}
+.design08 td:first-child {
+ background: #e9faf9;
+}
+.button020 a {
+    background: #eee;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button020 a:hover {
+    background: #edf6ff;
+}
+.button020 a:before, .button020 a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  transition: all 0.3s;
+  right: 0.6rem;
+  top: 50%;
+}
+.button020 a:before {
+  width: 1.4rem;
+  height: 2px;
+  background: #614f38;
+  transform: translateY(-50%);
+}
+.button020 a:after {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+.button020 a:hover:before {
+  width: 1.5rem;
+}
+.button020 a:hover:after {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+}
