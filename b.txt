@@ -1,23 +1,115 @@
-<main>
-  <div class="submission-container">
-    <h1 class="page-title">課題提出</h1>
+@charset "UTF-8";
 
-    <div class="file-drop-area">
-      <img src="../img/folder.png" class="logo2">
-      <span class="choose-file-button">ファイルを選択</span>
-      <span class="file-message">または、ファイルをここにドラッグ＆ドロップ</span>
-      <input class="file-input" type="file" multiple>
-    </div>
+/* メインを中央寄せ */
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
 
-    <div class="file-list">
-      <div class="file-item">
-        <span>提出ファイル名.pdf</span>
+/* 全体の白い箱 */
+.download-box {
+  width: 850px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
 
-        <div>
-          <button class="edit-button">編集</button>
-          <button class="delete-button">削除</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+/* パンくずリスト */
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #4d84e8;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  margin: 0 5px;
+  color: #555;
+}
+
+/* ページタイトル */
+.page-title {
+  margin-bottom: 25px;
+  padding-left: 12px;
+  border-left: 6px solid #4d84e8;
+  color: #333;
+  font-size: 32px;
+}
+
+/* 課題カード */
+.task-card {
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+/* 課題タイトル */
+.task-title {
+  margin-bottom: 20px;
+  color: #26384d;
+  font-size: 24px;
+}
+
+/* 課題情報テーブル */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ccc;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.task-table th {
+  width: 160px;
+  background: #e9f3ff;
+  text-align: left;
+}
+
+/* ボタンエリア */
+.button-area {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+/* ダウンロードボタン */
+.download-button {
+  background: #4d84e8;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 提出画面へのボタン */
+.submit-link {
+  background: #eee;
+  color: #333;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background: #356fd1;
+}
+
+.submit-link:hover {
+  background: #ddd;
+}
