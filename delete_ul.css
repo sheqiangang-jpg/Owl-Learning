@@ -1,0 +1,49 @@
+@charset "UTF-8";
+#myDialog{
+	height: 350px;
+    width: 500px;
+    /* これで真ん中 */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#span1{
+	margin-top: 80px;
+}
+
+#myDialog p{
+	text-align: center;
+	margin-top: 35px;
+	font-size: 20px;
+}
+.button2{
+	margin-top: 120px;
+	margin-left: 120px;
+	width: 10em;
+  	height:3em;
+}
+
+.cansel{
+	margin-left: 10px;
+	font-size: 20px;
+	border-radius: 30px;
+	width: 100px;
+	
+}
+.delete{
+	
+	font-size: 20px;
+	background-color: #F0D0D0;
+	border-radius: 30px;
+	width: 100px;
+}
+.delete1{
+	font-weight: 500;
+	font-size: 20px;
+	 background: #e74c3c;
+	width: 100px;
+}

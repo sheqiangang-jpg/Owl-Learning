@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>UL削除画面</title>
+		<link rel = "stylesheet" href="../css/index2.css">
+		<link rel = "stylesheet" href="../css/syain/submission_all.css">
+		<link rel = "stylesheet" href="../css/kanrisya/delete_ul.css">
+		
+	</head>
+<body>
+	<header>
+	  <img src="../img/logo.png" class="logo">
+	  <h1>Owl Learning</h1>
+	  <h2>城月さんのページです</h2>
+	</header>
+
+<div class="wrap">
+	<aside>
+		  
+	<details class="menu">
+	  <summary>マイページ</summary>
+	  <ul>
+	    <li class="text-red2">登録情報確認</li>
+	    <li class="text-red2">パスワード設定</li>
+	  </ul>
+	</details>
+	
+	<details class="menu">
+	  <summary>研修管理</summary>
+	  <ul>
+	    <li class="text-red2">研修予約</li>
+	    <li class="text-red2">研修予約管理</li>
+	    <li class="text-red2">受講履歴</li>
+	  </ul>
+	</details>
+	
+	<ul class="bottom">
+	      <li class="text-red2">・カレンダー </li>
+	      <li class="text-red2">・お知らせ一覧 </li>
+	      <li class="text-red2">・よくある質問</li>
+	      <li class="text-red2">・ログアウト</li>
+	      
+	</ul>
+	
+	  </aside>
+	
+
+<main>
+  <div class="submission-container">
+    <h1 class="page-title">課題UL</h1>
+
+    <div class="file-drop-area">
+      <img src="../img/folder.png" class="logo2">
+      <span class="choose-file-button">ファイルを選択</span>
+      <span class="message">または、ファイルをここにドラッグ＆ドロップ</span>
+      <input class="file-input" type="file" multiple>
+    </div>
+
+    <div class="file-list">
+      <div class="file-item">
+        <span>提出ファイル名.pdf</span>
+
+        <div>
+          <dialog id="myDialog">
+				  <p>削除すると元に戻せません。<br>
+					  本当に削除しますか？
+				  </p>
+				  <br>
+				  <br>
+				  <form method="dialog">
+					<div class="button2">
+					    <button class="cansel">閉じる</button>
+					    <span id="span1">
+							<button class="delete">削除する</button>
+						</span>
+					 </div>
+				  </form>
+				</dialog>
+				
+				<!-- ダイアログを開くボタン -->
+				<!-- ブラウザの組み込み機能や command 属性を活用します -->
+				<button class="delete1" onclick="document.getElementById('myDialog').showModal()">
+					削除
+				</button>
+				</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+</div>
+
+</body>
+</html>
