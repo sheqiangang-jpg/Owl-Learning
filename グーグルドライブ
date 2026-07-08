@@ -1,0 +1,44 @@
+<div class="drive-box">
+  <h2>課題資料</h2>
+
+  <p class="drive-note">
+    資料の追加・更新は下のボタンから行ってください。
+  </p>
+
+  <a href="https://drive.google.com/" target="_blank" class="drive-btn">
+    資料フォルダを開く
+  </a>
+</div>
+
+
+ーー
+
+
+.drive-box{
+  width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.drive-note{
+  margin: 25px 0;
+  font-size: 16px;
+}
+
+.drive-btn{
+  display: inline-block;
+  padding: 12px 36px;
+  background: #4d84e8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.drive-btn:hover{
+  background: #356fd0;
+}
