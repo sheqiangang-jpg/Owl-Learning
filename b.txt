@@ -1,115 +1,124 @@
 @charset "UTF-8";
 
-/* メインを中央寄せ */
-main {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
+
+.employee-area{
+  width:100%;
+  max-width:1100px;
+  background:#fff;
+  border:2px solid #444;
 }
 
-/* 全体の白い箱 */
-.download-box {
-  width: 850px;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
+
+.employee-header{
+  background:#4c84e8;
+  color:#fff;
+  padding:12px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-/* パンくずリスト */
-.breadcrumb {
-  margin-bottom: 20px;
-  font-size: 14px;
+.employee-header h3{
+  font-size:18px;
+  font-weight:normal;
 }
 
-.breadcrumb a {
-  color: #4d84e8;
-  text-decoration: none;
+
+.register-btn{
+  background:#fff;
+  color:#4c84e8;
+  border:1px solid #fff;
+  padding:7px 18px;
+  border-radius:4px;
+  cursor:pointer;
 }
 
-.breadcrumb a:hover {
-  text-decoration: underline;
+.register-btn:hover{
+  background:#eaf1ff;
 }
 
-.breadcrumb span {
-  margin: 0 5px;
-  color: #555;
+/* 検索エリア */
+
+.search-area{
+  padding:18px;
+  display:flex;
+  gap:10px;
+  border-bottom:1px solid #ddd;
 }
 
-/* ページタイトル */
-.page-title {
-  margin-bottom: 25px;
-  padding-left: 12px;
-  border-left: 6px solid #4d84e8;
-  color: #333;
-  font-size: 32px;
+.search-area input{
+  width:260px;
+  padding:9px;
+  border:1px solid #aaa;
+  border-radius:4px;
+  font-size:14px;
 }
 
-/* 課題カード */
-.task-card {
-  border: 1px solid #ccc;
-  padding: 25px;
-  border-radius: 10px;
-  background: #fafafa;
+.search-area button{
+  padding:9px 20px;
+  background:#4c84e8;
+  color:#fff;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
 }
 
-/* 課題タイトル */
-.task-title {
-  margin-bottom: 20px;
-  color: #26384d;
-  font-size: 24px;
+.search-area button:hover{
+  background:#356fd0;
 }
 
-/* 課題情報テーブル */
-.task-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
+/* テーブル */
+
+/*.table-wrap{*/
+/*  width:100%;*/
+/*  overflow-x:auto;*/
+/*}*/
+.table-wrap{
+width:100%;
+max-height:200px;
+overflow:auto;
+overflow:auto;
 }
 
-.task-table th,
-.task-table td {
-  border: 1px solid #ccc;
-  padding: 14px;
-  font-size: 15px;
+.employee-table{
+  width:100%;
+  min-width:980px;
+  border-collapse:collapse;
+  font-size:14px;
 }
 
-.task-table th {
-  width: 160px;
-  background: #e9f3ff;
-  text-align: left;
+
+
+.employee-table th{
+  background:#eaf1ff;
+  color:#333;
+  padding:12px 10px;
+  border-bottom:1px solid #999;
+  text-align:left;
+  white-space:nowrap;
 }
 
-/* ボタンエリア */
-.button-area {
-  margin-top: 25px;
-  display: flex;
-  gap: 15px;
+.employee-table th{
+  background:#eaf1ff;
+  color:#333;
+  padding:12px 10px;
+  border-bottom:1px solid #999;
+  text-align:left;
+  white-space:nowrap;
 }
 
-/* ダウンロードボタン */
-.download-button {
-  background: #4d84e8;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
+.employee-table td{
+  padding:13px 10px;
+  border-bottom:1px solid #999;
+  white-space:nowrap;
 }
 
-/* 提出画面へのボタン */
-.submit-link {
-  background: #eee;
-  color: #333;
-  padding: 12px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
+.employee-table tbody tr:hover{
+  background:#f5f8ff;
 }
 
-.download-button:hover {
-  background: #356fd1;
-}
 
-.submit-link:hover {
-  background: #ddd;
+.employee-table td:nth-child(3){
+  color:#777;
+  letter-spacing:1px;
 }
