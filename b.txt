@@ -1,38 +1,139 @@
-/* 出席状況ボタン */
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>出席状況編集</title>
 
-.attendance-form{
-  display: flex;
-  gap: 6px;
-}
+  <link rel="stylesheet" href="../css/index2.css">
+  <link rel="stylesheet" href="../css/kanrisya/member_view_detail.css">
+  <link rel="stylesheet" href="../css/kyoutu/mypage.css">
+</head>
 
-.attendance-btn{
-  padding: 5px 10px;
-  border: 1px solid #999;
-  border-radius: 6px;
-  background: #fff;
-  font-size: 13px;
-  cursor: pointer;
-  white-space: nowrap;
-}
+<body>
 
-/* 出席ボタン */
-.attendance-present{
-  color: green;
-  border-color: green;
-}
+<header>
+  <img src="../img/logo.png" class="logo">
+  <h1>Owl Learning</h1>
+  <h2>城月さんのページです</h2>
+</header>
 
-/* 欠席ボタン */
-.attendance-absent{
-  color: red;
-  border-color: red;
-}
+<div class="wrap">
 
-/* 未実施ボタン */
-.attendance-none{
-  color: #555;
-  border-color: #999;
-}
+  <aside>
 
-.attendance-btn:hover{
-  background: #f0f6ff;
-}
+    <details class="menu">
+      <summary>社員詳細</summary>
+      <ul>
+        <li class="text-red2">登録情報確認</li>
+      </ul>
+    </details>
+
+    <details class="menu">
+      <summary>メンバー</summary>
+      <ul>
+        <li class="text-red2">メンバー登録</li>
+        <li class="text-red2">メンバー閲覧</li>
+      </ul>
+    </details>
+
+    <details class="menu">
+      <summary>研修</summary>
+      <ul>
+        <li class="text-red2">研修登録</li>
+        <li class="text-red2">研修閲覧</li>
+      </ul>
+    </details>
+
+    <ul class="bottom">
+      <li class="text-red2">・お知らせ一覧 </li>
+      <li class="text-red2">・よくある質問</li>
+      <li class="text-red2">・ログアウト</li>
+      <li class="text-red2">・社員切り替え</li>
+    </ul>
+
+  </aside>
+
+  <div class="content">
+
+    <nav class="breadcrumb">
+      <ol class="breadcrumb-001">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">メンバー閲覧</a></li>
+        <li><a href="member_view_detail.html">社員詳細</a></li>
+        <li>出席状況編集</li>
+      </ol>
+    </nav>
+
+    <main>
+
+      <section class="attendance-edit-area">
+
+        <div class="attendance-edit-header">
+          <h1>出席状況編集</h1>
+        </div>
+
+        <div class="attendance-edit-box">
+
+          <table class="attendance-edit-table">
+            <tr>
+              <th>社員ID</th>
+              <td>C6S0175</td>
+            </tr>
+            <tr>
+              <th>社員名</th>
+              <td>鈴木雄満</td>
+            </tr>
+            <tr>
+              <th>研修ID</th>
+              <td>E002</td>
+            </tr>
+            <tr>
+              <th>研修名</th>
+              <td>フォローアップ研修</td>
+            </tr>
+            <tr>
+              <th>現在の出席状況</th>
+              <td><span class="status-label status-present">出席</span></td>
+            </tr>
+          </table>
+
+          <form action="#" method="post" class="attendance-submit-area">
+
+            <input type="hidden" name="memberId" value="C6S0175">
+            <input type="hidden" name="trainingId" value="E002">
+
+            <p class="attendance-message">変更後の出席状況を選択してください。</p>
+
+            <div class="attendance-submit-buttons">
+              <button type="submit" name="attendance" value="出席" class="attendance-submit-btn present-submit">
+                出席
+              </button>
+
+              <button type="submit" name="attendance" value="欠席" class="attendance-submit-btn absent-submit">
+                欠席
+              </button>
+
+              <button type="submit" name="attendance" value="未実施" class="attendance-submit-btn none-submit">
+                未実施
+              </button>
+            </div>
+
+          </form>
+
+          <div class="back-area">
+            <button type="button" class="back-btn" onclick="location.href='member_view_detail.html'">
+              戻る
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+</div>
+
+</body>
+</html>
