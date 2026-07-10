@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>金型管理者</title>
+  <title>メンバー詳細</title>
 
   <!-- 既存の金型CSS -->
   <link rel="stylesheet" href="../css/index2.css">
 
   <!-- 社員一覧専用CSS -->
-  <link rel="stylesheet" href="../css/kanrisya/member_view.css">
+  <link rel="stylesheet" href="../css/kanrisya/member_view_detail.css">
 
   <!-- マイページ専用CSS -->
   <link rel="stylesheet" href="../css/kyoutu/mypage.css">
@@ -28,7 +28,7 @@
   <aside>
 
     <details class="menu">
-      <summary>マイページ</summary>
+      <summary>社員詳細</summary>
       <ul>
         <li class="text-red2">登録情報確認</li>
       </ul>
@@ -59,213 +59,221 @@
 
   </aside>
 
-  <main>
+  <div class="content">
 
-    <!-- パンくずリスト -->
-    <ol class="breadcrumb-001">
-      <li><a href="#">ホーム</a></li>
-      <li><a href="#">社員一覧</a></li>
-      <li><a href="#">社員詳細</a></li>
-    </ol>
+    <nav class="breadcrumb">
+      <ol class="breadcrumb-001">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">メンバー閲覧</a></li>
+      </ol>
+    </nav>
 
-    <br>
-    <br>
+    <main>
+      <section class="mypage_area">
 
-    <section class="mypage_area">
-
-      <div class="mypage_header">
-        <h1>マイページ</h1>
-        <button class="register-btn">修正</button>
-      </div>
-
-      <div class="mypage_tabletext">
-        <table border="2" width="100%" height="320" style="border-color: blue;">
-          <tr>
-            <td>　社員ID</td>
-            <td>　C6S0175</td>
-          </tr>
-          <tr>
-            <td>　社員名</td>
-            <td>　鈴木雄満</td>
-          </tr>
-          <tr>
-            <td>　パスワード</td>
-            <td>　************</td>
-          </tr>
-          <tr>
-            <td>　入社日時</td>
-            <td>　2026/04/01</td>
-          </tr>
-          <tr>
-            <td>　入社区分</td>
-            <td>　新卒</td>
-          </tr>
-          <tr>
-            <td>　メールアドレス</td>
-            <td>　suzuki-hoge@hoge.jp</td>
-          </tr>
-          <tr>
-            <td>　役員区分</td>
-            <td>　一般</td>
-          </tr>
-          <tr>
-            <td>　上長名</td>
-            <td>　城月一寿</td>
-          </tr>
-          <tr>
-            <td>　部署名</td>
-            <td>　経営管理部</td>
-          </tr>
-        </table>
-      </div>
-
-      <section class="employee-area">
-
-        <div class="employee-header">
-          <h3>研修一覧</h3>
-          <button class="register-btn">並び替え</button>
+        <div class="mypage_header">
+          <h1>社員詳細</h1>
+          <button class="register-btn">修正</button>
         </div>
 
-        <div class="search-area">
-          <input type="text" placeholder="研修名で検索">
-          <button>検索</button>
-        </div>
-
-        <div class="table-wrap">
-          <table class="employee-table">
-
-            <thead>
-              <tr>
-                <th>研修ID</th>
-                <th>研修名</th>
-                <th>対象者</th>
-                <th>実施方法</th>
-                <th>開講日</th>
-                <th>課題提出状況</th>
-                <th>報告書提出状況</th>
-                <th>受講状況</th>
-                <th>出席状況</th>
-                <th>詳細</th>
-              </tr>
-            </thead>
-
-            <tbody>
-
-              <tr>
-                <td>E002</td>
-                <td>フォローアップ研修</td>
-                <td>2年次</td>
-                <td>集合</td>
-                <td>2027/05/25</td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: green;">受講済み</td>
-                <td>
-                  <select class="attendance-select">
-                    <option value="出席" selected>出席</option>
-                    <option value="欠席">欠席</option>
-                  </select>
-                </td>
-                <td>
-                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>E003</td>
-                <td>タイムマネジメント研修</td>
-                <td>2年次</td>
-                <td>オンライン</td>
-                <td>2026/07/07</td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: green;">受講済み</td>
-                <td>
-                  <select class="attendance-select">
-                    <option value="出席" selected>出席</option>
-                    <option value="欠席">欠席</option>
-                  </select>
-                </td>
-                <td>
-                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>E004</td>
-                <td>OJT指導者研修</td>
-                <td>3年目</td>
-                <td>集合</td>
-                <td>2027/06/13-06/14</td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: green;">受講済み</td>
-                <td>
-                  <select class="attendance-select">
-                    <option value="出席" selected>出席</option>
-                    <option value="欠席">欠席</option>
-                  </select>
-                </td>
-                <td>
-                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>E005</td>
-                <td>トリプルシンキング研修</td>
-                <td>3年目</td>
-                <td>オンライン</td>
-                <td>2026/08/07-08/08</td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: green;">未提出</td>
-                <td style="color: red;">未受講</td>
-                <td>
-                  <select class="attendance-select">
-                    <option value="出席">出席</option>
-                    <option value="欠席">欠席</option>
-                  </select>
-                </td>
-                <td>
-                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>E006</td>
-                <td>ALSP若手社員研修</td>
-                <td>3年次</td>
-                <td>集合</td>
-                <td>
-                  2027/10/24-10/27<br>
-                  2027/11/07-11/10<br>
-                  2027/12/12-12/15
-                </td>
-                <td style="color: green;">提出済み</td>
-                <td style="color: red;">未提出</td>
-                <td style="color: red;">未受講</td>
-                <td>
-                  <select class="attendance-select">
-                    <option value="出席">出席</option>
-                    <option value="欠席">欠席</option>
-                  </select>
-                </td>
-                <td>
-                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
-                </td>
-              </tr>
-
-            </tbody>
-
+        <div class="mypage_tabletext">
+          <table border="2" width="100%" height="320" style="border-color: blue;">
+            <tr>
+              <td>　社員ID</td>
+              <td>　C6S0175</td>
+            </tr>
+            <tr>
+              <td>　社員名</td>
+              <td>　鈴木雄満</td>
+            </tr>
+            <tr>
+              <td>　パスワード</td>
+              <td>　************</td>
+            </tr>
+            <tr>
+              <td>　入社日時</td>
+              <td>　2026/04/01</td>
+            </tr>
+            <tr>
+              <td>　入社区分</td>
+              <td>　新卒</td>
+            </tr>
+            <tr>
+              <td>　メールアドレス</td>
+              <td>　suzuki-hoge@hoge.jp</td>
+            </tr>
+            <tr>
+              <td>　役員区分</td>
+              <td>　一般</td>
+            </tr>
+            <tr>
+              <td>　上長名</td>
+              <td>　城月一寿</td>
+            </tr>
+            <tr>
+              <td>　部署名</td>
+              <td>　経営管理部</td>
+            </tr>
           </table>
         </div>
 
+        <section class="employee-area">
+
+          <div class="employee-header">
+            <h3>研修一覧</h3>
+            <button class="register-btn">並び替え</button>
+          </div>
+
+          <div class="search-area">
+            <input type="text" placeholder="研修名で検索">
+            <button>検索</button>
+          </div>
+
+          <div class="table-wrap">
+            <table class="employee-table">
+
+              <thead>
+                <tr>
+                  <th>研修ID</th>
+                  <th>研修名</th>
+                  <th>対象者</th>
+                  <th>実施方法</th>
+                  <th>開講日</th>
+                  <th>課題提出状況</th>
+                  <th>報告書提出状況</th>
+                  <th>受講状況</th>
+                  <th>出席状況</th>
+                  <th>詳細</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>E002</td>
+                  <td>フォローアップ研修</td>
+                  <td>2年次</td>
+                  <td>集合</td>
+                  <td>2027/05/25</td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: green;">受講済み</td>
+                  <td>
+                    <form class="attendance-form" action="#" method="post">
+                      <input type="hidden" name="trainingId" value="E002">
+                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
+                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
+                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
+                    </form>
+                  </td>
+                  <td>
+                    <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>E003</td>
+                  <td>タイムマネジメント研修</td>
+                  <td>2年次</td>
+                  <td>オンライン</td>
+                  <td>2026/07/07</td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: green;">受講済み</td>
+                  <td>
+                    <form class="attendance-form" action="#" method="post">
+                      <input type="hidden" name="trainingId" value="E003">
+                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
+                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
+                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
+                    </form>
+                  </td>
+                  <td>
+                    <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>E004</td>
+                  <td>OJT指導者研修</td>
+                  <td>3年目</td>
+                  <td>集合</td>
+                  <td>2027/06/13-06/14</td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: green;">受講済み</td>
+                  <td>
+                    <form class="attendance-form" action="#" method="post">
+                      <input type="hidden" name="trainingId" value="E004">
+                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
+                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
+                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
+                    </form>
+                  </td>
+                  <td>
+                    <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>E005</td>
+                  <td>トリプルシンキング研修</td>
+                  <td>3年目</td>
+                  <td>オンライン</td>
+                  <td>2026/08/07-08/08</td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: green;">未提出</td>
+                  <td style="color: red;">未受講</td>
+                  <td>
+                    <form class="attendance-form" action="#" method="post">
+                      <input type="hidden" name="trainingId" value="E005">
+                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
+                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
+                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
+                    </form>
+                  </td>
+                  <td>
+                    <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>E006</td>
+                  <td>ALSP若手社員研修</td>
+                  <td>3年次</td>
+                  <td>集合</td>
+                  <td>
+                    2027/10/24-10/27<br>
+                    2027/11/07-11/10<br>
+                    2027/12/12-12/15
+                  </td>
+                  <td style="color: green;">提出済み</td>
+                  <td style="color: red;">未提出</td>
+                  <td style="color: red;">未受講</td>
+                  <td>
+                    <form class="attendance-form" action="#" method="post">
+                      <input type="hidden" name="trainingId" value="E006">
+                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
+                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
+                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
+                    </form>
+                  </td>
+                  <td>
+                    <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                  </td>
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+
+        </section>
+
       </section>
 
-    </section>
-
-  </main>
-
+    </main>
+  </div>
 </div>
 
 </body>
