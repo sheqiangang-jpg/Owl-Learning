@@ -4,15 +4,9 @@
   <meta charset="UTF-8">
   <title>メンバー詳細</title>
 
-  <!-- 既存の金型CSS -->
   <link rel="stylesheet" href="../css/index2.css">
-
-  <!-- 社員一覧専用CSS -->
   <link rel="stylesheet" href="../css/kanrisya/member_view_detail.css">
-
-  <!-- マイページ専用CSS -->
   <link rel="stylesheet" href="../css/kyoutu/mypage.css">
-
 </head>
 
 <body>
@@ -143,6 +137,7 @@
                   <th>報告書提出状況</th>
                   <th>受講状況</th>
                   <th>出席状況</th>
+                  <th>編集</th>
                   <th>詳細</th>
                 </tr>
               </thead>
@@ -158,13 +153,12 @@
                   <td style="color: green;">提出済み</td>
                   <td style="color: green;">提出済み</td>
                   <td style="color: green;">受講済み</td>
+                  <td><span class="status-label status-present">出席</span></td>
                   <td>
-                    <form class="attendance-form" action="#" method="post">
-                      <input type="hidden" name="trainingId" value="E002">
-                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
-                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
-                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
-                    </form>
+                    <button type="button" class="edit-btn"
+                      onclick="location.href='member_attendance_edit.html?trainingId=E002'">
+                      編集
+                    </button>
                   </td>
                   <td>
                     <button type="button" onclick="location.href='https://example.com'">詳細</button>
@@ -180,13 +174,12 @@
                   <td style="color: green;">提出済み</td>
                   <td style="color: green;">提出済み</td>
                   <td style="color: green;">受講済み</td>
+                  <td><span class="status-label status-present">出席</span></td>
                   <td>
-                    <form class="attendance-form" action="#" method="post">
-                      <input type="hidden" name="trainingId" value="E003">
-                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
-                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
-                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
-                    </form>
+                    <button type="button" class="edit-btn"
+                      onclick="location.href='member_attendance_edit.html?trainingId=E003'">
+                      編集
+                    </button>
                   </td>
                   <td>
                     <button type="button" onclick="location.href='https://example.com'">詳細</button>
@@ -202,13 +195,12 @@
                   <td style="color: green;">提出済み</td>
                   <td style="color: green;">提出済み</td>
                   <td style="color: green;">受講済み</td>
+                  <td><span class="status-label status-present">出席</span></td>
                   <td>
-                    <form class="attendance-form" action="#" method="post">
-                      <input type="hidden" name="trainingId" value="E004">
-                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
-                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
-                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
-                    </form>
+                    <button type="button" class="edit-btn"
+                      onclick="location.href='member_attendance_edit.html?trainingId=E004'">
+                      編集
+                    </button>
                   </td>
                   <td>
                     <button type="button" onclick="location.href='https://example.com'">詳細</button>
@@ -224,13 +216,12 @@
                   <td style="color: green;">提出済み</td>
                   <td style="color: green;">未提出</td>
                   <td style="color: red;">未受講</td>
+                  <td><span class="status-label status-none">未実施</span></td>
                   <td>
-                    <form class="attendance-form" action="#" method="post">
-                      <input type="hidden" name="trainingId" value="E005">
-                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
-                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
-                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
-                    </form>
+                    <button type="button" class="edit-btn"
+                      onclick="location.href='member_attendance_edit.html?trainingId=E005'">
+                      編集
+                    </button>
                   </td>
                   <td>
                     <button type="button" onclick="location.href='https://example.com'">詳細</button>
@@ -250,13 +241,12 @@
                   <td style="color: green;">提出済み</td>
                   <td style="color: red;">未提出</td>
                   <td style="color: red;">未受講</td>
+                  <td><span class="status-label status-none">未実施</span></td>
                   <td>
-                    <form class="attendance-form" action="#" method="post">
-                      <input type="hidden" name="trainingId" value="E006">
-                      <button type="submit" name="attendance" value="出席" class="attendance-btn attendance-present">出席</button>
-                      <button type="submit" name="attendance" value="欠席" class="attendance-btn attendance-absent">欠席</button>
-                      <button type="submit" name="attendance" value="未実施" class="attendance-btn attendance-none">未実施</button>
-                    </form>
+                    <button type="button" class="edit-btn"
+                      onclick="location.href='member_attendance_edit.html?trainingId=E006'">
+                      編集
+                    </button>
                   </td>
                   <td>
                     <button type="button" onclick="location.href='https://example.com'">詳細</button>
@@ -271,8 +261,8 @@
         </section>
 
       </section>
-
     </main>
+
   </div>
 </div>
 
