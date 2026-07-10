@@ -1,278 +1,268 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		
-		<meta charset="UTF-8">
-		<title>金型管理者</title>
-		<!-- 既存の金型CSS -->
-	<link rel="stylesheet" href="../css/index2.css">
-	<!-- 社員一覧専用CSS -->
-	<link rel="stylesheet" href="../css/kanrisya/member_view.css">
-	<!-- マイページ専用CSS -->
-	<link rel="stylesheet" href="../css/kyoutu/mypage.css">
-	<!-- 研修一覧専用CSS -->
-<!--	<link rel="stylesheet" href="../css/kanrisya/k-training_view.css">-->
-	     
-		
-	
-	</head>
+<head>
+  <meta charset="UTF-8">
+  <title>メンバー詳細</title>
+
+  <!-- 既存の金型CSS -->
+  <link rel="stylesheet" href="../css/index2.css">
+
+  <!-- 社員一覧専用CSS -->
+  <link rel="stylesheet" href="../css/kanrisya/member_view_detail.css">
+
+  <!-- マイページ専用CSS -->
+  <link rel="stylesheet" href="../css/kyoutu/mypage.css">
+
+</head>
+
 <body>
-	<header>
-	  <img src="../img/logo.png" class="logo">
-	  <h1>Owl Learning</h1>
-	  <h2>城月さんのページです</h2>
-	</header>
+
+<header>
+  <img src="../img/logo.png" class="logo">
+  <h1>Owl Learning</h1>
+  <h2>城月さんのページです</h2>
+</header>
 
 <div class="wrap">
-	<aside>
-		  
-	<details class="menu">
-	  <summary>マイページ</summary>
-	  <ul>
-	    <li class="text-red2">登録情報確認</li>
-	  </ul>
-	</details>
-	
-	<details class="menu">
-	  <summary>メンバー</summary>
-	  <ul>
-	    <li class="text-red2">メンバー登録</li>
-	    <li class="text-red2">メンバー閲覧</li>
-	  </ul>
-	</details>
-	
-	<details class="menu">
-	  <summary>研修</summary>
-	  <ul>
-	    <li class="text-red2">研修登録</li>
-	    <li class="text-red2">研修閲覧</li>
-	  </ul>
-	</details>
-	
-	<ul class="bottom">
-	      <li class="text-red2">・お知らせ一覧 </li>
-	      <li class="text-red2">・よくある質問</li>
-	      <li class="text-red2">・ログアウト</li>
-	      <li class="text-red2">・社員切り替え</li>
-	</ul>
-	
-	  </aside>
 
-<main>
-<main>
-			<!-- /*修正　小島↓*/ -->
+  <aside>
+
+    <details class="menu">
+      <summary>社員詳細</summary>
+      <ul>
+        <li class="text-red2">登録情報確認</li>
+      </ul>
+    </details>
+
+    <details class="menu">
+      <summary>メンバー</summary>
+      <ul>
+        <li class="text-red2">メンバー登録</li>
+        <li class="text-red2">メンバー閲覧</li>
+      </ul>
+    </details>
+
+    <details class="menu">
+      <summary>研修</summary>
+      <ul>
+        <li class="text-red2">研修登録</li>
+        <li class="text-red2">研修閲覧</li>
+      </ul>
+    </details>
+
+    <ul class="bottom">
+      <li class="text-red2">・お知らせ一覧 </li>
+      <li class="text-red2">・よくある質問</li>
+      <li class="text-red2">・ログアウト</li>
+      <li class="text-red2">・社員切り替え</li>
+    </ul>
+
+  </aside>
+  <div class="content">
+		<nav class="breadcrumb">
 			<ol class="breadcrumb-001">
 				<li><a href="#">ホーム</a></li>
-				<li><a href="#">社員一覧</a></li>
-				<li><a href="#">社員詳細</a></li>
+				<li><a href="#">メンバー閲覧</a></li>
 			</ol>
-			<br>
-			<br>
+		</nav>
 
+  <main>
+    <section class="mypage_area">
 
-			<section class="mypage_area">
+      <div class="mypage_header">
+        <h1>社員詳細</h1>
+        <button class="register-btn">修正</button>
+      </div>
 
-				<div class="mypage_header">
-					<h1>マイページ</h1>
-					<button class="register-btn">修正</button>
-				</div>
-				<!--				<div class="mypage_flex">-->
-				<!--				<figure><img class="portrait_image" src="../img/sample_portrait.png" alt=""></figure>-->
-				<!--				<div class="mypage_grid">-->
-				<!--						<h3>社員ID：C6S0175</h3>-->
-				<!--						<h3>社員名：鈴木雄満</h3>-->
-				<!--						<h3>パスワード：************</h3>-->
-				<!--						<h3>入社区分：新卒</h3>-->
-				<!--						<h3>年次：1年次</h3>-->
-				<!--						<h3>合計年次：1年次</h3>-->
-				<!--						<h3>役職ID：PG7</h3>-->
-				<!--						<h3>上長ID：C2S0123</h3>-->
-				<!--						<h3>メールアドレス：suzuki-hoge@hoge.jp</h3>-->
-				<!--				<table border=0>-->
-				<!--					<tr>-->
-				<!--						<td>-->
-				<!--							<img class="portrait_image" src="../img/sample_portrait.png">-->
-				<!--						</td>-->
-				<!--						<td valign="top">-->
-				<div class="mypage_tabletext">
-					<table border="2" width="100%" height="320" style="border-color: blue;">
-						<tr>
-							<td>　社員ID</td>
-							<td>　C6S0175</td>
-						</tr>
-						<tr>
-							<td>　社員名</td>
-							<td>　鈴木雄満</td>
-						</tr>
-						<tr>
-							<td>　パスワード</td>
-							<td>　************</td>
-						</tr>
-						<tr>
-							<td>　入社日時</td>
-							<td>　2026/04/01</td>
-						</tr>
-						<tr>
-							<td>　入社区分</td>
-							<td>　新卒</td>
-						</tr>
-						<tr>
-							<td>　メールアドレス</td>
-							<td>　suzuki-hoge@hoge.jp</td>
-						</tr>
-						<tr>
-							<td>　役員区分</td>
-							<td>　一般</td>
-						</tr>
-						<tr>
-							<td>　上長名</td>
-							<td>　城月一寿</td>
-						</tr>
-						<tr>
-							<td>　部署名</td>
-							<td>　経営管理部</td>
-						</tr>
-					</table>
-				</div>
-				<!--						</td>-->
-				<!--					</tr>-->
-				<!--				</table>-->
-				<!--				</div>-->
-				<!--				</div>//flexのdiv-->
+      <div class="mypage_tabletext">
+        <table border="2" width="100%" height="320" style="border-color: blue;">
+          <tr>
+            <td>　社員ID</td>
+            <td>　C6S0175</td>
+          </tr>
+          <tr>
+            <td>　社員名</td>
+            <td>　鈴木雄満</td>
+          </tr>
+          <tr>
+            <td>　パスワード</td>
+            <td>　************</td>
+          </tr>
+          <tr>
+            <td>　入社日時</td>
+            <td>　2026/04/01</td>
+          </tr>
+          <tr>
+            <td>　入社区分</td>
+            <td>　新卒</td>
+          </tr>
+          <tr>
+            <td>　メールアドレス</td>
+            <td>　suzuki-hoge@hoge.jp</td>
+          </tr>
+          <tr>
+            <td>　役員区分</td>
+            <td>　一般</td>
+          </tr>
+          <tr>
+            <td>　上長名</td>
+            <td>　城月一寿</td>
+          </tr>
+          <tr>
+            <td>　部署名</td>
+            <td>　経営管理部</td>
+          </tr>
+        </table>
+      </div>
 
-<!--				<div class="mypage_area">-->
-<!--					<div class="mypage_header">-->
-<!--						<h1>研修名</h1>-->
-<!--					</div>-->
-<!--					<div class="search-area">  マイページに検索がいらなければ消す -->
-<!--						<input type="text" placeholder="研修名で検索">-->
-<!--						<button>検索</button>-->
-<!--					</div>-->
+      <section class="employee-area">
 
-					<section class="employee-area">
+        <div class="employee-header">
+          <h3>研修一覧</h3>
+          <button class="register-btn">並び替え</button>
+        </div>
 
-						<div class="employee-header">
-							<h3>研修一覧</h3>
-							<button class="register-btn">並び替え</button>
-						</div>
+        <div class="search-area">
+          <input type="text" placeholder="研修名で検索">
+          <button>検索</button>
+        </div>
 
-						<div class="search-area">
-							<input type="text" placeholder="研修名で検索">
-							<button>検索</button>
-						</div>
+        <div class="table-wrap">
+          <table class="employee-table">
 
-						<div class="table-wrap">
-							<table class="employee-table">
-								<thead>
-									<tr>
-										　<th>研修ID</th>
-										<th>研修名</th>
-										<th>対象者</th>
-										<th>実施方法</th>
-										<th>開講日</th>
-										<th>課題提出状況</th>
-										<th>報告書提出状況</th>
-										<th>受講状況</th>
-										<th>出席状況</th>
-										<th>詳細</th>
+            <thead>
+              <tr>
+                <th>研修ID</th>
+                <th>研修名</th>
+                <th>対象者</th>
+                <th>実施方法</th>
+                <th>開講日</th>
+                <th>課題提出状況</th>
+                <th>報告書提出状況</th>
+                <th>受講状況</th>
+                <th>出席状況</th>
+                <th>詳細</th>
+              </tr>
+            </thead>
 
-									</tr>
-								</thead>
+            <tbody>
 
-								<tbody>
+              <tr>
+                <td>E002</td>
+                <td>フォローアップ研修</td>
+                <td>2年次</td>
+                <td>集合</td>
+                <td>2027/05/25</td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: green;">受講済み</td>
+                <td>
+                  <select class="attendance-select">
+                    <option value="出席" selected>出席</option>
+                    <option value="欠席">欠席</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                </td>
+              </tr>
 
+              <tr>
+                <td>E003</td>
+                <td>タイムマネジメント研修</td>
+                <td>2年次</td>
+                <td>オンライン</td>
+                <td>2026/07/07</td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: green;">受講済み</td>
+                <td>
+                  <select class="attendance-select">
+                    <option value="出席" selected>出席</option>
+                    <option value="欠席">欠席</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                </td>
+              </tr>
 
-									<tr>
-										<td>E002</td>
-										<td>フォローアップ研修</td>
-										<td>2年次</td>
-										<td>集合</td>
-										<td>2027/05/25</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: green;">受講済み</td>
-										<td style="color: green;">出席</td>
-										<td><button type="button"
-												onclick="location.href='https://example.com'">詳細</button></td>
-									</tr>
+              <tr>
+                <td>E004</td>
+                <td>OJT指導者研修</td>
+                <td>3年目</td>
+                <td>集合</td>
+                <td>2027/06/13-06/14</td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: green;">受講済み</td>
+                <td>
+                  <select class="attendance-select">
+                    <option value="出席" selected>出席</option>
+                    <option value="欠席">欠席</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                </td>
+              </tr>
 
+              <tr>
+                <td>E005</td>
+                <td>トリプルシンキング研修</td>
+                <td>3年目</td>
+                <td>オンライン</td>
+                <td>2026/08/07-08/08</td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: green;">未提出</td>
+                <td style="color: red;">未受講</td>
+                <td>
+                  <select class="attendance-select">
+                    <option value="出席">出席</option>
+                    <option value="欠席">欠席</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                </td>
+              </tr>
 
+              <tr>
+                <td>E006</td>
+                <td>ALSP若手社員研修</td>
+                <td>3年次</td>
+                <td>集合</td>
+                <td>
+                  2027/10/24-10/27<br>
+                  2027/11/07-11/10<br>
+                  2027/12/12-12/15
+                </td>
+                <td style="color: green;">提出済み</td>
+                <td style="color: red;">未提出</td>
+                <td style="color: red;">未受講</td>
+                <td>
+                  <select class="attendance-select">
+                    <option value="出席">出席</option>
+                    <option value="欠席">欠席</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" onclick="location.href='https://example.com'">詳細</button>
+                </td>
+              </tr>
 
+            </tbody>
 
-									<tr>
-										<td>E003</td>
-										<td>タイムマネジメント研修</td>
-										<td>2年次</td>
-										<td>オンライン</td>
-										<td>2026/07/07</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: green;">受講済み</td>
-										<td style="color: green;">出席</td>
-										<td><button type="button"
-												onclick="location.href='https://example.com'">詳細</button></td>
-									</tr>
-									<tr>
-										<td>E004</td>
-										<td>OJT指導者研修</td>
-										<td>3年目</td>
-										<td>集合</td>
-										<td>2027/06/13-06/14</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: green;">受講済み</td>
-										<td style="color: green;">出席</td>
-										<td><button type="button"
-												onclick="location.href='https://example.com'">詳細</button></td>
-									</tr>
+          </table>
+        </div>
 
-									<tr>
-										<td>E005</td>
-										<td>トリプルシンキング研修</td>
-										<td>3年目</td>
-										<td>オンライン</td>
-										<td>2026/08/07-08/08</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: green;">未提出</td>
-										<td style="color: red;">未受講</td>
-										<td style="color: green;"></td>
-										<td><button type="button"
-												onclick="location.href='https://example.com'">詳細</button></td>
-									</tr>
-									<tr>
-										<td>E006</td>
-										<td>ALSP若手社員研修</td>
-										<td>3年次</td>
-										<td>集合</td>
-										<td>
-											2027/10/24-10/27<br>
-											2027/11/07-11/10<br>
-											2027/12/12-12/15
-										</td>
-										<td style="color: green;">提出済み</td>
-										<td style="color: red;">未提出</td>
-										<td style="color: red;">未受講</td>
-										<td style="color: green;"></td>
-										<td><button type="button"
-												onclick="location.href='https://example.com'">詳細</button></td>
-									</tr>
+      </section>
 
-								</tbody>
+    </section>
 
-
-
-							</table>
-						</div>
-
-					</section>
-<!--				</div>-->
-
-			</section>
-
-		</main>
-
-</main>
- 
+  </main>
+  </div>
+</div>
 
 </body>
 </html>
