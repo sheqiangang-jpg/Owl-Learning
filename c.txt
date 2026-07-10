@@ -1,0 +1,150 @@
+/* 出席状況の表示ラベル */
+
+.status-label{
+  display: inline-block;
+  min-width: 70px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-present{
+  color: green;
+  background: #eaffea;
+  border: 1px solid green;
+}
+
+.status-absent{
+  color: red;
+  background: #ffecec;
+  border: 1px solid red;
+}
+
+.status-none{
+  color: #555;
+  background: #eeeeee;
+  border: 1px solid #999;
+}
+
+/* 一覧画面の編集ボタン */
+
+.edit-btn{
+  padding: 6px 14px;
+  background: #4c84e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn:hover{
+  background: #356fd0;
+}
+
+/* 出席状況編集画面 */
+
+.attendance-edit-area{
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border: 2px solid #444;
+}
+
+.attendance-edit-header{
+  background: #4c84e8;
+  color: #fff;
+  padding: 12px 18px;
+}
+
+.attendance-edit-header h1{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.attendance-edit-box{
+  padding: 30px;
+}
+
+.attendance-edit-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.attendance-edit-table th,
+.attendance-edit-table td{
+  border: 1px solid #999;
+  padding: 14px;
+  text-align: left;
+}
+
+.attendance-edit-table th{
+  width: 220px;
+  background: #eaf1ff;
+}
+
+.attendance-submit-area{
+  text-align: center;
+}
+
+.attendance-message{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.attendance-submit-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.attendance-submit-btn{
+  width: 120px;
+  height: 44px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.present-submit{
+  color: green;
+  background: #eaffea;
+  border: 1px solid green;
+}
+
+.absent-submit{
+  color: red;
+  background: #ffecec;
+  border: 1px solid red;
+}
+
+.none-submit{
+  color: #555;
+  background: #eeeeee;
+  border: 1px solid #999;
+}
+
+.attendance-submit-btn:hover{
+  opacity: 0.8;
+}
+
+.back-area{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-btn{
+  padding: 8px 30px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #999;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.back-btn:hover{
+  background: #f2f2f2;
+}
